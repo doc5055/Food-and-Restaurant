@@ -1,0 +1,394 @@
+.amazing {
+  height: 2134px;
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-image: url("../../img/Bg_amazing_delicious.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__subtitle {
+    margin-top: 83px;
+    padding-top: 13px;
+    font-family: "Pacifico-Regular";
+    font-size: 30px;
+    letter-spacing: -1.4px;
+    color: #fff;
+
+    @include sm {
+      margin-top: 40px;
+    }
+
+    @include xs {
+      margin-top: 20px;
+    }
+  }
+
+  &__title {
+    margin-top: 4px;
+    font-family: "TimesNewRoman-Regular";
+    font-size: 39px;
+    letter-spacing: -1.4px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &--01 {
+      position: relative;
+      z-index: 100;
+      width: 100%;
+    }
+
+    &--02 {
+      position: relative;
+      z-index: 100;
+      margin-top: 600px;
+      width: 100%;
+
+      @include sm {
+        margin-top: 430px;
+      }
+
+      @include xs {
+        margin-top: 410px;
+      }
+    }
+
+    &--03 {
+      position: relative;
+      z-index: 100;
+      margin-top: 600px;
+      width: 100%;
+
+      @include sm {
+        margin-top: 430px;
+      }
+
+      @include xs {
+        margin-top: 410px;
+      }
+    }
+  }
+
+  &-menu__left {
+    position: absolute;
+    right: 0;
+    top: 54px;
+    z-index: 6;
+    width: 51.3%;
+    height: 454px;
+    background-color: #fff;
+
+    @include lg {
+      width: 55%;
+    }
+
+    @include min-lg {
+      width: 65%;
+    }
+
+    @include sm {
+      top: -10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 400px;
+    }
+
+    @include xs {
+      height: 380px;
+    }
+  }
+
+  &-menu__right {
+    position: absolute;
+    left: 0;
+    top: 54px;
+    z-index: 6;
+    width: 51.3%;
+    height: 454px;
+    background-color: #fff;
+
+    @include lg {
+      width: 55%;
+    }
+
+    @include min-lg {
+      width: 65%;
+    }
+
+    @include sm {
+      top: -10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 400px;
+    }
+
+    @include xs {
+      height: 380px;
+    }
+  }
+
+  &-menu {
+    &__el {
+      display: flex;
+      align-items: center;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus span {
+        color: #e7a331;
+        transition: color 0.3s;
+      }
+    }
+
+    &__subtitle {
+      display: inline-block;
+      margin-top: 38px;
+      margin-bottom: 27px;
+      margin-left: 67px;
+      font-family: "Pacifico-Regular";
+      font-size: 30px;
+      letter-spacing: -0.6px;
+      color: #000;
+      transition: color 0.3s;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+        color: #e7a331;
+        transition: color 0.3s;
+      }
+
+      &:hover {
+        color: #e7a331;
+        transition: color 0.3s;
+      }
+
+      @include sm {
+        margin-top: 24px;
+        margin-bottom: 12px;
+        margin-left: 0;
+
+        // &:hover {
+        //   pointer-events: none;
+        // }
+      }
+
+      @include xs {
+        margin-top: 18px;
+        margin-bottom: 8px;
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-top: 6.1px;
+      margin-left: 57px;
+
+      @include sm {
+        margin-left: 0;
+      }
+    }
+
+    &__name {
+      display: inline-block;
+      margin-left: 5px;
+      font-family: "TimesNewRoman-Regular";
+      font-size: 18px;
+      color: #000;
+      transition: color 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        color: #e7a331;
+        transition: color 0.3s;
+      }
+
+      @include xl {
+        display: none;
+      }
+
+      // @include sm {
+      //   &:hover {
+      //     pointer-events: none;
+      //   }
+      // }
+    }
+
+    &__name01 {
+      display: none;
+      margin-left: 5px;
+      font-family: "TimesNewRoman-Regular";
+      font-size: 18px;
+      color: #000;
+      transition: color 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        color: #e7a331;
+        transition: color 0.3s;
+      }
+
+      @include xl {
+        display: inline-block;
+      }
+
+      @include max-sm {
+        display: none;
+      }
+
+      // @include sm {
+      //   &:hover {
+      //     pointer-events: none;
+      //   }
+      // }
+    }
+
+    &__name02 {
+      display: none;
+      margin-left: 5px;
+      font-family: "TimesNewRoman-Regular";
+      font-size: 18px;
+      color: #000;
+      transition: color 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        color: #e7a331;
+        transition: color 0.3s;
+      }
+
+      @include max-sm {
+        display: inline-block;
+      }
+
+      // @include sm {
+      //   &:hover {
+      //     pointer-events: none;
+      //   }
+      // }
+
+      @include xs {
+        display: none;
+      }
+    }
+
+    &__name03 {
+      display: none;
+      margin-left: 5px;
+      font-family: "TimesNewRoman-Regular";
+      font-size: 18px;
+      color: #000;
+      transition: color 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        color: #e7a331;
+        transition: color 0.3s;
+      }
+
+      // @include sm {
+      //   &:hover {
+      //     pointer-events: none;
+      //   }
+      // }
+
+      @include xs {
+        display: inline-block;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &-image01 {
+    position: absolute;
+    left: -3px;
+    top: 7px;
+    z-index: 5;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &-image02 {
+    position: absolute;
+    right: -3px;
+    top: 7px;
+    z-index: 5;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &-image03 {
+    position: absolute;
+    left: -3px;
+    top: 7px;
+    z-index: 5;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &-image__bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    font-size: 0;
+
+    img {
+      padding-bottom: -2px;
+      width: 100%;
+      height: 100%;
+    }
+
+    @include min-sm {
+      display: none;
+    }
+  }
+
+  @include sm {
+    height: 1460px;
+  }
+
+  @include xs {
+    height: 1380px;
+  }
+}

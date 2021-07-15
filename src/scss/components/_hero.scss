@@ -1,0 +1,94 @@
+.hero {
+  position: relative;
+  height: 804px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-image: url("../../img/Bg_hero.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    margin-top: 300px;
+    margin-bottom: 19px;
+    margin-left: -15px;
+    font-family: "Pacifico-Regular";
+    font-size: 105px;
+    letter-spacing: -2.9px;
+    color: #fff;
+
+    @include sm {
+      margin-top: 250px;
+      margin-left: 0;
+      font-size: 80px;
+    }
+
+    @include xs {
+      margin-top: 200px;
+      margin-bottom: 10px;
+      font-size: 55px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 41px;
+    margin-left: 1px;
+    max-width: 80%;
+    font-family: "TimesNewRoman-Regular";
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+
+    @include sm {
+      margin-bottom: 31px;
+      font-size: 22px;
+    }
+
+    @include xs {
+      margin-bottom: 21px;
+      font-size: 19px;
+    }
+  }
+
+  &__btn {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 9px 38px;
+    font-family: "TimesNewRoman-Regular";
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.4s;
+
+    &:focus {
+      outline: none;
+      border: 2px solid #e7a331;
+      color: #000;
+      background-color: #e7a331;
+      transition: all 0.4s;
+    }
+
+    &:hover {
+      border: 2px solid #e7a331;
+      color: #000;
+      background-color: #e7a331;
+      transition: all 0.4s;
+    }
+
+    @include sm {
+      margin-bottom: 30px;
+
+      // &:hover {
+      //   pointer-events: none;
+      // }
+    }
+  }
+
+  @include sm {
+    height: 100%;
+  }
+}

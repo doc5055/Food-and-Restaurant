@@ -1,0 +1,264 @@
+.mobile {
+  height: 704px;
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-image: url("../../img/Bg_mobile_app.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+
+    &--right {
+      position: absolute;
+      right: 0;
+      margin-top: 134px;
+      width: 57%;
+      height: 310px;
+
+      @include lg {
+        width: 61%;
+      }
+
+      @include sm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        width: 100%;
+      }
+
+      @include xs {
+        margin-top: 35px;
+      }
+    }
+
+    @include xl {
+      width: 100%;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    left: 5.5%;
+    top: 33px;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      @include min-lg {
+        width: 80%;
+        height: 80%;
+      }
+
+      @include max-sm {
+        width: 70%;
+        height: 70%;
+      }
+
+      @include sm {
+        display: none;
+      }
+    }
+
+    @include lg {
+      left: 1.5%;
+    }
+
+    @include min-lg {
+      left: 0;
+    }
+  }
+
+  &__subtitle {
+    display: inline-block;
+    margin-top: 0;
+    padding-left: 4px;
+    font-family: "Pacifico-Regular";
+    font-size: 30px;
+    color: #fff;
+
+    @include sm {
+      padding-left: 0;
+    }
+  }
+
+  &__title {
+    margin-top: 7px;
+    margin-bottom: 0;
+    font-family: "TimesNewRoman-Regular";
+    font-size: 95px;
+    letter-spacing: -2.1px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: color 0.3s;
+    cursor: pointer;
+
+    a {
+      color: #fff;
+
+      &:focus {
+        outline: none;
+        color: #e7a331;
+        transition: color 0.3s;
+      }
+
+      &:hover {
+        color: #e7a331;
+        transition: color 0.3s;
+      }
+    }
+
+    @include xl {
+      font-size: 85px;
+    }
+
+    @include min-xl {
+      font-size: 80px;
+    }
+
+    @include max-sm {
+      font-size: 70px;
+    }
+
+    // @include sm {
+    //   &:hover {
+    //     pointer-events: none;
+    //   }
+    // }
+
+    @include xs {
+      margin-top: 18px;
+      font-size: 45px;
+    }
+  }
+
+  &__description {
+    margin-top: -12px;
+    margin-left: 4px;
+    font-family: "TimesNewRoman-Regular";
+    font-size: 31px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #fff;
+
+    @include xl {
+      font-size: 28px;
+    }
+
+    @include min-xl {
+      font-size: 25px;
+    }
+
+    @include max-sm {
+      font-size: 23px;
+    }
+
+    @include sm {
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+    @include xs {
+      margin-top: 8px;
+    }
+  }
+
+  &__btns {
+    margin-top: 45px;
+    margin-left: 6px;
+
+    @include xl {
+      margin-left: 0;
+    }
+
+    @include sm {
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    @include xs {
+      margin-top: 15px;
+    }
+  }
+
+  &__btn {
+    img {
+      transform: scale(1);
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      @include xl {
+        height: 100%;
+      }
+
+      // @include sm {
+      //   &:hover {
+      //     pointer-events: none;
+      //   }
+      // }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus img {
+      transform: scale(1.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    &--google {
+      img {
+        @include min-lg {
+          width: 42%;
+        }
+      }
+    }
+
+    &--app {
+      margin-left: 5%;
+
+      img {
+        @include min-lg {
+          width: 47%;
+        }
+      }
+
+      @include sm {
+        margin-left: 10%;
+      }
+
+      @include xs {
+        margin-left: 9%;
+      }
+    }
+  }
+
+  @include min-lg {
+    height: 550px;
+  }
+
+  @include sm {
+    height: 400px;
+  }
+
+  @include xs {
+    height: 320px;
+  }
+}

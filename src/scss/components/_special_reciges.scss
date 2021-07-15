@@ -1,0 +1,182 @@
+.reciges {
+  height: 787px;
+
+  &__container {
+    position: relative;
+    display: flex;
+    height: 100%;
+    background-image: url("../../img/Bg_special_reciges.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+
+    &--left {
+      position: absolute;
+      left: 0;
+      top: 17.2%;
+      z-index: 6;
+      width: 45.5%;
+      height: 59.5%;
+      background-image: url("../../img/Special_reciges_img-bg.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @include lg {
+        width: 55%;
+      }
+
+      @include min-lg {
+        width: 65%;
+      }
+
+      @include sm {
+        top: 5%;
+        width: 100%;
+        height: 90%;
+      }
+    }
+  }
+
+  &__subtitle {
+    display: inline-block;
+    margin-top: 45px;
+    padding-left: 42px;
+    font-family: "Pacifico-Regular";
+    font-size: 30px;
+    letter-spacing: -0.2px;
+
+    @include sm {
+      display: block;
+      padding-top: 40px;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    @include xs {
+      margin-top: 20px;
+      padding-top: 0;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-top: 4px;
+    margin-left: 40px;
+    font-family: "TimesNewRoman-Regular";
+    font-size: 39px;
+    letter-spacing: -1.4px;
+    text-transform: uppercase;
+
+    @include sm {
+      display: block;
+      margin-left: 0;
+      text-align: center;
+    }
+
+    @include xs {
+      font-size: 34px;
+    }
+  }
+
+  &__description {
+    margin-top: -15px;
+    padding-left: 47px;
+    width: 93%;
+    font-family: "TimesNewRoman-Regular";
+    font-size: 15px;
+    line-height: 18px;
+
+    @include min-md {
+      font-size: 14px;
+    }
+
+    @include xs {
+      margin-top: -30px;
+      padding-left: 20px;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-top: 34px;
+    margin-left: 38px;
+    border-radius: 4px;
+    padding: 15px 44px;
+    font-family: "TimesNewRoman-Regular";
+    font-size: 15px;
+    color: #fff;
+    background-color: #e7a331;
+    transition: color 0.3s;
+
+    &:focus {
+      outline: none;
+      color: #000;
+      transition: color 0.3s;
+    }
+
+    &:hover {
+      color: #000;
+      transition: color 0.3s;
+    }
+
+    @include sm {
+      display: flex;
+      justify-content: center;
+      margin-left: 10%;
+      width: 80%;
+
+      // &:hover {
+      //   pointer-events: none;
+      // }
+    }
+
+    @include xs {
+      margin-top: 24px;
+    }
+  }
+
+  &-image {
+    position: absolute;
+    right: 0;
+    top: 94px;
+    z-index: 5;
+    width: 670px;
+    height: 554px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &-image__between {
+    position: absolute;
+    left: 0;
+    bottom: -215px;
+    z-index: 100;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include min-sm {
+      display: none;
+    }
+  }
+
+  @include sm {
+    height: 600px;
+  }
+}
